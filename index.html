@@ -59,8 +59,8 @@
    
 }
 .div1{
-    height: 120px;
-    width:  300px;
+    max-height: 120px;
+    max-width:  300px;
     border: 2px solid black;
 }
 .Mother-1{
@@ -114,6 +114,17 @@ align-items: center;
     }
     .container1{
         flex-direction: column;
+    }
+    .footer1{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .sub-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .t1, .t2{
+        display: none;
     }
   }
 
@@ -251,7 +262,7 @@ align-items: center;
 </div>
         </div>
         <!-- sub mother container -->
-        <div class="sub-container grid grid-cols-3 gap-5">
+        <div class="sub-container grid grid-cols-2 lg:grid-cols-3  gap-5">
             <!-- box1 -->
 <div class="div1 rounded-[6px] flex gap-7 shadow-xl bg-slate-200">
 <div class="my-5">
@@ -401,10 +412,10 @@ align-items: center;
  <div class="container1 flex gap-5 justify-center">
     <div class="new1 bg-gradient-to-r from-purple-400 to-yellow-500 flex justify-center align-baseline rounded-xl">
         <div>
-    <p class="text-sm my-8">Under Price</p>
-    <h6 class="text-2xl">Pet Grooming Mitt</h6>
-    <p class="text-white">(Easy Hair Removal)</p>
-    <h1>$7.99</h1>
+    <p class="text-sm ml-2  t1">Under Price</p>
+    <h6 class="text-2xl  ml-2 " >Pet Grooming Mitt</h6>
+    <p class="text-white ml-2 t2 ">(Easy Hair Removal)</p>
+    <h1 class="ml-2">$7.99</h1>
         </div>
         <div>
     <img src="./images/cute-dog-mid.png" alt="">
@@ -427,13 +438,61 @@ align-items: center;
 
 
  </div>
+ <section> 
+    <h1 class="text-5xl font-bold my-8 text-current ml-[180px]">Benifits of Casts</h1>
+    <div class="flex bg-gradient-to-r from-orange-400 to-yellow-500 my-8 ">
+        <div class="">
+            <img src="./images/cat-big.png" alt="">
+        </div>
+        <div>
+            <ul class="font-bold text-3xl">
+                <li>Stress Reduction</li>
+                <li>Lower Blood Pressure & Heart Disease Risk</li>
+                <li>Better Sleep</li>
+                <li>Allergy Prevention</li>
+                <li>Companionship</li>
+            </ul>
+        </div>
+
+        
+    </div>
+ </section>
  
 
    </main>
    <!-- Footer Section Start -->
     <footer class="my-[500px] ">
 
-        <div class="footer1 bg-[#FFDC26]">
+        <div class="footer1 bg-orange-500 flex ">
+            <div class="mother1 mt-20 mr-20"> 
+                <div class="flex gap-2">
+                    <div>
+                        <img src="./images/logo-header.png" alt="">
+                    </div>
+                   <p>Browse4Pets</p>
+                </div>
+<p>Discover a world of treats, toys,<br> and essentials handpicked for your furry <br> friends</p>
+
+            </div>
+            <div class="manu mt-16">
+                <ul>
+                    <li><a href="">Find a pet</a></li>
+                    <li><a href=""></a>Breeds</li>
+                    <li><a href=""></a>Contact us</li>
+                </ul>
+
+            </div >
+            <div class="mt-14 ml-56">
+                <h1>Follow</h1>
+                <div class="flex gap-3">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            
+
 
 
 
@@ -441,7 +500,7 @@ align-items: center;
 <img src="./images/cute-pet-mid.png" alt="">
             
             <div class="space-y-1 mb-14">
-                <h1>Get Pawsome News!</h1>
+                <h1 class="font-bold text-2xl">Get Pawsome News!</h1>
                 <p>Exclusive training tips, ticks, product deals and more.</p>
                 <input class="bg-slate-50 text-white p-3 rounded-sm" type="text" name="" id="" placeholder="Enter Main"><br>
                 <button class="btn my-2">Subscribe</button>
